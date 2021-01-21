@@ -1,24 +1,14 @@
-# Zcash Rust crates
+this package build to gen the diversify address from viewing key:
 
-This repository contains a (work-in-progress) set of Rust crates for
-working with Zcash.
+1. install rust:
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
-## Security Warnings
+2. clone repo:
+git clone https://github.com/hoangphuongcs/librustzcash/
 
-These libraries are currently under development and have not been fully-reviewed.
+3. cd to the repo:
+cd librustzcash/cash_client_backend/
+cargo build --example diversify-address --release
 
-## License
-
-All code in this workspace is licensed under either of
-
- * Apache License, Version 2.0, ([LICENSE-APACHE](LICENSE-APACHE) or http://www.apache.org/licenses/LICENSE-2.0)
- * MIT license ([LICENSE-MIT](LICENSE-MIT) or http://opensource.org/licenses/MIT)
-
-at your option.
-
-### Contribution
-
-Unless you explicitly state otherwise, any contribution intentionally
-submitted for inclusion in the work by you, as defined in the Apache-2.0
-license, shall be dual licensed as above, without any additional terms or
-conditions.
+4. copy builded file here:
+librustzcash/target/release/examples/diversify-address
