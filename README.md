@@ -1,4 +1,4 @@
-this package build to gen the diversify address from viewing key:
+# the package clone to build to gen the diversify address from viewing key:
 
 1. install rust:
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
@@ -11,3 +11,10 @@ cd librustzcash/cash_client_backend/ && cargo build --example diversify-address 
 
 4. copy builded file here:
 librustzcash/target/release/examples/diversify-address
+
+5. run build file.
+./diversify-address -- [viewingkey] [index]
+
+6. output:
+[addrses], [index]
+
